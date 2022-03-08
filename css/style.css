@@ -1,0 +1,233 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+body {
+  font-family: 'Nanum Myeongjo', serif;
+}
+.Ayesha, .bookOnline, .nav a, .maintext p, .coupon *,.info h4, .mominfo h2, .blndlabel *,.lookbook h5{
+  font-weight: 900;
+}
+.main *, .mominfo a, .blndcoupon a{
+  color: white;
+}
+/******************************************
+/* LAYOUT
+/*******************************************/
+.navbar{
+  height: 60px;
+}
+.container, .nav{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+}
+
+.Ayesha{
+  font-style: italic;
+  font-size: 1.5em;
+}
+.nav a, .button2 {
+  margin-left: 40px;
+  text-decoration: none;
+  color: black;
+}
+.main{
+  background-image: url('./backgroundphoto.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 150vh;
+}
+
+.maintext{
+  padding: 245px 0 0 200px;
+}
+.maintext h1{
+  font-size: 120px;
+  margin-bottom: 20px;
+  letter-spacing: 3px;
+}
+.top p{
+  letter-spacing: 7px;
+  padding-bottom: 27px;
+}
+.maintext .top a , .mominfo a , .blndcoupon a{
+  background: black;
+  padding: 15px 30px;
+  text-decoration: none;
+}
+.coupon{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-around;
+  height: 300px;
+  width: 16%;
+  margin-top: 225px;
+  background: black;
+  padding: 40px 20px; 
+}
+.coupon p, .mominfo p{
+  line-height: 2;
+}
+.coupon a{
+  background: white;
+  margin:0;
+  padding: 15px 30px;
+  border-radius: 3px;
+}
+
+.fa-angle-left,.fa-angle-right{
+  color: black;
+  background: white;
+  padding: 17px 20px;
+  border-radius: 50%;
+  float: right;
+}
+.fa-angle-right{
+  margin-right: 150px;
+}
+.fa-angle-left{
+  margin-right: 10px;
+}
+
+.information{
+  width: 60%;
+  height: 30vh;
+  margin: 50px auto;
+}
+
+.info {
+  margin:20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.info p {
+  text-align: center;
+}
+
+.momentum{
+  background: rgb(243, 244, 246);
+  height: 50vh;
+}
+.mominfo{
+  display: flex;
+  flex-direction: column;
+  margin: 30px;
+}
+.momen{
+  width: 60%;
+  margin: 100px auto;
+
+}
+.mominfo a {
+  width: 32%;
+  font-size: 15px;
+}
+.mominfo h2,.lookbook h5{
+  font-size: 40px;
+  line-height: 1.5;
+  letter-spacing: 4;
+  margin: 0;
+}
+
+.beauticians{
+  padding-top: 50px;
+  margin: 0 350px;
+  height: 75vh;
+} 
+.title{
+  position: relative;
+}
+.label{
+  text-align: center;
+  position: absolute;
+  bottom: -20px;
+  left: 5%;
+  background: black;
+  color: white;
+  padding: 15px 80px;
+  width: 90%;
+}
+
+.label span{
+  font-size: 10px;
+  letter-spacing: 5px;
+}
+
+.blndcoupon{
+  margin: 0 350px;
+  height: 55vh;
+  position: relative;
+}
+.blndlabel{
+  position: absolute;
+  bottom: 30%;
+  left: 10%;
+}
+.blndlabel span{
+  font-size: 20px;
+  letter-spacing: 1.5px;
+}
+.blndlabel p{
+  font-size: 30px;
+  letter-spacing: 1.5px;
+  line-height: 60px;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+.lookbook h5{
+  padding: 100px 0;
+  display: block;
+  text-align: center;
+}
+
+.lookbookgrid{
+  padding-bottom: 100px;
+  margin: 0 350px;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 300px;
+  grid-auto-columns: 150px;
+}
+.lookbookgrid img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.long{
+  grid-row: span 2;
+}
+/*****************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+.info a{
+  font-size: 100px;
+  color: rgb(34, 32, 32);
+}
+
+.mominfo img{
+  width: 30em;
+}
